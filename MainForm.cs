@@ -42,6 +42,7 @@ namespace ResetNetwork {
             // 
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.container.Location = new System.Drawing.Point(0, 0);
+            this.container.Margin = new System.Windows.Forms.Padding(5);
             this.container.Name = "container";
             // 
             // container.Panel1
@@ -66,6 +67,7 @@ namespace ResetNetwork {
             this.buttonPanel.Controls.Add(this.resetWinsockButton, 0, 4);
             this.buttonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonPanel.Location = new System.Drawing.Point(0, 0);
+            this.buttonPanel.Margin = new System.Windows.Forms.Padding(5);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.RowCount = 5;
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -135,6 +137,7 @@ namespace ResetNetwork {
             // 
             this.shellTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.shellTextBox.Location = new System.Drawing.Point(0, 0);
+            this.shellTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.shellTextBox.Multiline = true;
             this.shellTextBox.Name = "shellTextBox";
             this.shellTextBox.ReadOnly = true;
