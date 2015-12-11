@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Management;
@@ -59,7 +52,7 @@ namespace ResetNetwork {
             // 
             this.container.Panel2.Controls.Add(this.shellTextBox);
             this.container.Size = new System.Drawing.Size(464, 281);
-            this.container.SplitterDistance = 118;
+            this.container.SplitterDistance = 120;
             this.container.TabIndex = 0;
             // 
             // buttonPanel
@@ -71,7 +64,8 @@ namespace ResetNetwork {
             this.buttonPanel.Controls.Add(this.flushDNSButton, 0, 2);
             this.buttonPanel.Controls.Add(this.resetProtocolButton, 0, 3);
             this.buttonPanel.Controls.Add(this.resetWinsockButton, 0, 4);
-            this.buttonPanel.Location = new System.Drawing.Point(3, 3);
+            this.buttonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonPanel.Location = new System.Drawing.Point(0, 0);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.RowCount = 5;
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -79,14 +73,15 @@ namespace ResetNetwork {
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.buttonPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.buttonPanel.Size = new System.Drawing.Size(112, 275);
+            this.buttonPanel.Size = new System.Drawing.Size(120, 281);
             this.buttonPanel.TabIndex = 1;
             // 
             // renewIPButton
             // 
+            this.renewIPButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.renewIPButton.Location = new System.Drawing.Point(3, 3);
             this.renewIPButton.Name = "renewIPButton";
-            this.renewIPButton.Size = new System.Drawing.Size(106, 49);
+            this.renewIPButton.Size = new System.Drawing.Size(114, 50);
             this.renewIPButton.TabIndex = 0;
             this.renewIPButton.Text = "Renew IP";
             this.renewIPButton.UseVisualStyleBackColor = true;
@@ -94,9 +89,10 @@ namespace ResetNetwork {
             // 
             // resetAdapterButton
             // 
-            this.resetAdapterButton.Location = new System.Drawing.Point(3, 58);
+            this.resetAdapterButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resetAdapterButton.Location = new System.Drawing.Point(3, 59);
             this.resetAdapterButton.Name = "resetAdapterButton";
-            this.resetAdapterButton.Size = new System.Drawing.Size(106, 49);
+            this.resetAdapterButton.Size = new System.Drawing.Size(114, 50);
             this.resetAdapterButton.TabIndex = 1;
             this.resetAdapterButton.Text = "Reset Adapter";
             this.resetAdapterButton.UseVisualStyleBackColor = true;
@@ -104,9 +100,10 @@ namespace ResetNetwork {
             // 
             // flushDNSButton
             // 
-            this.flushDNSButton.Location = new System.Drawing.Point(3, 113);
+            this.flushDNSButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flushDNSButton.Location = new System.Drawing.Point(3, 115);
             this.flushDNSButton.Name = "flushDNSButton";
-            this.flushDNSButton.Size = new System.Drawing.Size(106, 49);
+            this.flushDNSButton.Size = new System.Drawing.Size(114, 50);
             this.flushDNSButton.TabIndex = 2;
             this.flushDNSButton.Text = "Flush DNS";
             this.flushDNSButton.UseVisualStyleBackColor = true;
@@ -114,9 +111,10 @@ namespace ResetNetwork {
             // 
             // resetProtocolButton
             // 
-            this.resetProtocolButton.Location = new System.Drawing.Point(3, 168);
+            this.resetProtocolButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resetProtocolButton.Location = new System.Drawing.Point(3, 171);
             this.resetProtocolButton.Name = "resetProtocolButton";
-            this.resetProtocolButton.Size = new System.Drawing.Size(106, 49);
+            this.resetProtocolButton.Size = new System.Drawing.Size(114, 50);
             this.resetProtocolButton.TabIndex = 3;
             this.resetProtocolButton.Text = "Reset Protocol";
             this.resetProtocolButton.UseVisualStyleBackColor = true;
@@ -124,9 +122,10 @@ namespace ResetNetwork {
             // 
             // resetWinsockButton
             // 
-            this.resetWinsockButton.Location = new System.Drawing.Point(3, 223);
+            this.resetWinsockButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resetWinsockButton.Location = new System.Drawing.Point(3, 227);
             this.resetWinsockButton.Name = "resetWinsockButton";
-            this.resetWinsockButton.Size = new System.Drawing.Size(106, 49);
+            this.resetWinsockButton.Size = new System.Drawing.Size(114, 51);
             this.resetWinsockButton.TabIndex = 4;
             this.resetWinsockButton.Text = "Reset Winsock";
             this.resetWinsockButton.UseVisualStyleBackColor = true;
@@ -134,12 +133,13 @@ namespace ResetNetwork {
             // 
             // shellTextBox
             // 
-            this.shellTextBox.Location = new System.Drawing.Point(3, 3);
+            this.shellTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.shellTextBox.Location = new System.Drawing.Point(0, 0);
             this.shellTextBox.Multiline = true;
             this.shellTextBox.Name = "shellTextBox";
             this.shellTextBox.ReadOnly = true;
             this.shellTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.shellTextBox.Size = new System.Drawing.Size(336, 275);
+            this.shellTextBox.Size = new System.Drawing.Size(340, 281);
             this.shellTextBox.TabIndex = 0;
             // 
             // MainForm
@@ -147,6 +147,7 @@ namespace ResetNetwork {
             this.ClientSize = new System.Drawing.Size(464, 281);
             this.Controls.Add(this.container);
             this.Name = "MainForm";
+            this.Text = "ResetNetwork";
             this.container.Panel1.ResumeLayout(false);
             this.container.Panel2.ResumeLayout(false);
             this.container.Panel2.PerformLayout();
@@ -189,6 +190,7 @@ namespace ResetNetwork {
         private void resetAdapterButton_Click(object sender, EventArgs e) {
             ManagementObjectSearcher searcher = new ManagementObjectSearcher(@"SELECT * FROM Win32_NetworkAdapter WHERE  Manufacturer != 'Microsoft' AND NOT PNPDeviceID LIKE 'ROOT\\%'");
             ManagementObjectCollection adapters = searcher.Get();
+
             foreach (ManagementObject adapter in adapters) {
                 string name = (string)adapter.Properties["Name"].Value;
                 shellTextBox.Text += name + ": Disable" + Environment.NewLine;
